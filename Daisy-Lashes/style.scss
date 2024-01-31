@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Foldit:wght@200;400&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@400;700&family=Orbitron&family=Rajdhani&family=Roboto:wght@100;400;500;700&family=Tektur&family=VT323&display=swap");
+@import "reset";
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+body {
+    font-family: Manrope;
+    font-style: normal;
+    line-height: normal;
+    padding: 0px 200px;
+    header {
+        background-image: url(./img/BGIMG1.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 49px;
+        section {
+            // backdrop-filter: blur(15px);
+            img {
+                margin-left: 132px;
+            }
+            display: flex;
+            justify-content: space-between;
+            nav {
+                margin-top: 40px;
+                background-color: rgba(224, 103, 195, 0.1);
+                display: flex;
+                align-items: center;
+                height: 52px;
+                border-radius: 5px;
+                a {
+                    margin-left: 69px;
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                a:last-child {
+                    margin-right: 69px;
+                }
+                a:hover {
+                    color: rgba(224, 103, 195, 1);
+                }
+            }
+        }
+        .info {
+            margin-top: 100px;
+            display: flex;
+            .slayder {
+                margin-top: 100px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                img {
+                    cursor: pointer;
+                    width: 7px;
+                }
+            }
+            .content {
+                margin-left: 42px;
+                h1 {
+                    margin-top: 42px;
+                    font-size: 34px;
+                    font-weight: 700;
+                }
+                div {
+                    height: 75px;
+                    margin-top: 48px;
+                    align-items: center;
+                    display: flex;
+                    img {
+                        margin-left: 0px;
+                    }
+                    h4 {
+                        margin-left: 24px;
+                        color: #000;
+                        font-size: 20px;
+                        font-weight: 500;
+                        span {
+                            color: rgba(0, 0, 0, 0.2);
+                            font-weight: 400;
+                            text-decoration: line-through;
+                        }
+                        span:last-child {
+                            color: #e067c3;
+                            text-decoration: none;
+                        }
+                    }
+                    h3 {
+                        margin-left: 24px;
+                        color: #000;
+                        font-size: 20px;
+                        font-weight: 500;
+                        span {
+                            color: #000;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+                button {
+                    margin-top: 76px;
+                    margin-bottom: 150px;
+                    width: 365px;
+                    height: 71px;
+                    background: #e067c3;
+                    color: #fff;
+                    font-size: 22px;
+                    font-weight: 700;
+                    border-radius: 15px;
+                    border: 2px solid #e067c3;
+                }
+                button:hover {
+                    background: #fff;
+                    color: #e067c3;
+                }
+            }
+        }
+        .contact {
+            text-align: right;
+            color: #000;
+            h3 {
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 6px;
+            }
+            div {
+                margin-top: 26px;
+                display: flex;
+                justify-content: right;
+                h1{
+                    margin-left: 9px;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            h2{
+                margin-top: 35px;
+                color: rgba(0, 0, 0, 0.50);
+                font-size: 12px;
+                font-weight: 400;
+            }
+            p {
+                margin-top: 7px;
+                color: #e067c3;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+    // main{
+    //     section{
+
+    //     }
+    // }
+}
