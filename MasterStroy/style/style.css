@@ -1,0 +1,661 @@
+@import url("https://fonts.googleapis.com/css2?family=Foldit:wght@200;400&family=Manrope:wght@500;600;700;800&family=Montserrat:wght@400;700&family=Orbitron&family=Rajdhani&family=Roboto:wght@100;400;500;700&family=Tektur&family=VT323&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: none;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #404040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-right: 30px;
+  margin-right: 30px;
+  border-right: #fff solid 2px;
+}
+header .header-item p {
+  margin-left: 15px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+header button {
+  width: 240px;
+  background-color: #fff;
+  border-radius: 30px;
+  height: 50px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav p {
+  margin-left: 30px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.welcomebanner {
+  width: 100%;
+  height: 540px;
+  background-image: url(../img/welcome-card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.welcomebanner h1 {
+  margin: 0 auto;
+  padding-bottom: 30px;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.welcomebanner p {
+  margin: 0 auto;
+  padding-bottom: 30px;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.welcomebanner button {
+  margin: 0 auto;
+  width: 240px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #E05100;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.productCatalog {
+  width: 100%;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productCatalog h2 {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.productCatalog .productCatalog-cards {
+  margin: 0 276px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.productCatalog .productCatalog-cards .productCatalog-card {
+  margin-top: 62px;
+  width: 240px;
+  height: 264px;
+  border-radius: 30px;
+  background: #FFF;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 44px;
+}
+.productCatalog .productCatalog-cards .productCatalog-card p {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.productCatalog button {
+  margin-top: 72px;
+  width: 266px;
+  height: 60px;
+  border-radius: 30px;
+  background: #E05100;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.visitcard {
+  margin-top: 140px;
+  width: 100%;
+  background-color: #404040;
+  display: flex;
+}
+.visitcard img {
+  border-radius: 0 30px 30px 0;
+}
+.visitcard .visitcard-info {
+  margin: 0 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.visitcard .visitcard-info h2 {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.visitcard .visitcard-info h4 {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.visitcard .visitcard-info p {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visitcard .visitcard-info button {
+  width: 240px;
+  height: 60px;
+  border-radius: 30px;
+  background: #E05100;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.topCatalog {
+  margin: 120px;
+}
+.topCatalog h4 {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 80px;
+}
+.topCatalog .topCatalog-cards {
+  margin: 0 275px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.topCatalog .topCatalog-cards .topCatalog-card {
+  display: flex;
+  border-radius: 30px;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-info {
+  border-radius: 30px;
+  background: #FFF;
+  margin-left: 23px;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-info img {
+  margin: 20px 24px 27px 0;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-info h6 {
+  margin-top: 27px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-info p {
+  margin-top: 12px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-info .topCatalog-card-info-colorChoice {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-info .topCatalog-card-info-colorChoice .colorRectangles {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-info .topCatalog-card-info-colorChoice .DullGrey {
+  background-color: #737373;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-info .topCatalog-card-info-colorChoice .BismarckFurioso {
+  background-color: #9C0909;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-info .topCatalog-card-info-colorChoice .redhead {
+  background-color: #D48D37;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-info .topCatalog-card-info-colorChoice .brown {
+  background-color: #964B00;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-info .topCatalog-card-info-colorChoice .Crimson {
+  background-color: #DC143C;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-info .topCatalog-card-info-colorChoice .DarkGrey {
+  background-color: #49423D;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-info .topCatalog-card-info-colorChoice .russet {
+  background-color: #D77D31;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-info .topCatalog-card-info-colorChoice .black {
+  background-color: #000000;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-price {
+  border-radius: 0px 30px 30px 0px;
+  background: #404040;
+  padding-left: 23px;
+  position: relative;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-price h6 {
+  margin-top: 20px;
+  margin-right: 33px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-price p {
+  margin-top: 5px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+.topCatalog .topCatalog-cards .topCatalog-card .topCatalog-card-price button {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 69px;
+  height: 56px;
+  border-radius: 30px 0;
+  background-color: #E05100;
+}
+
+.about-block {
+  background-color: #404040;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-block h1 {
+  margin-top: 120px;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.about-block .about-block-madia {
+  margin-top: 80px;
+  margin-bottom: 120px;
+  display: flex;
+}
+.about-block .about-block-madia .about-block-madia-info .about-block-madia-info-logo {
+  width: 231px;
+  height: 74px;
+  border-radius: 30px;
+  background: #FFF;
+  display: flex;
+  justify-content: center;
+}
+.about-block .about-block-madia .about-block-madia-info .about-block-madia-info-elem {
+  margin-top: 50px;
+  display: flex;
+}
+.about-block .about-block-madia .about-block-madia-info .about-block-madia-info-elem p {
+  margin-left: 35px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.about-block .about-block-madia .about-block-madia-video {
+  margin-top: 35px;
+  margin-left: 35px;
+}
+
+.worksList {
+  margin-top: 120px;
+}
+.worksList .worksList-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.worksList .worksList-info h1 {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.worksList .worksList-info p {
+  margin-top: 80px;
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.worksList .woksList-works {
+  margin: 78px 275px 0 275px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.worksList .woksList-works img {
+  border-radius: 30px;
+}
+
+.advantages {
+  background-color: #404040;
+  width: 100%;
+  padding: 120px 0;
+  margin-top: 120px;
+}
+.advantages .advantages-title {
+  display: flex;
+  justify-content: center;
+}
+.advantages .advantages-title h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.advantages .advantages-cards {
+  margin: 80px 275px 0px 275px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.advantages .advantages-cards .advantages-card {
+  background-color: #FFF;
+  border-radius: 30px;
+  width: 330px;
+  height: 330px;
+}
+.advantages .advantages-cards .advantages-card img {
+  margin: 14px 120px 30px 120px;
+}
+.advantages .advantages-cards .advantages-card h1 {
+  margin: 0 30px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.advantages .advantages-cards .advantages-card p {
+  margin: 15px 30px 38px 30px;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer {
+  padding-top: 100px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer h1 {
+  color: #E05100;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+footer p {
+  margin-top: 20px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .chapters {
+  display: flex;
+}
+footer .chapters .chapters-main .chapters-main-elem {
+  display: flex;
+  margin-top: 20px;
+}
+footer .chapters .chapters-main .chapters-main-elem img {
+  width: 22px;
+}
+footer .chapters .chapters-main .chapters-main-elem p {
+  margin-top: 0px;
+  margin-left: 20px;
+}
+footer .chapters .chapters-other {
+  margin-left: 300px;
+  display: flex;
+}
+footer .chapters .chapters-other .chapters-other-elem {
+  margin-left: 95px;
+}
+footer .copyright {
+  margin: 40px 0 20px 0;
+}/*# sourceMappingURL=style.css.map */
